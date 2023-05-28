@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <span class="nav__logo">Проект</span>
+        <div class="nav__text">
+            <a href="./index.html" class="nav__link">Про мене</a>
+            <span class="nav__link">Мови</span>
+            <div class="anime-menu">
+                <a href="./index1.html" class="anime-menu__element">HTML</a>
+                <a href="./index2.html" class="anime-menu__element">CSS</a>
+                <a href="./index3.html" class="anime-menu__element">JS</a>
+            </div>
+        </div>
+    </nav>
+    <iframe src="https://uk.wikipedia.org/wiki/JavaScript" frameborder="0"></iframe>
+    <script>
+        document.querySelectorAll(".nav__link")[1].addEventListener("mouseover", e => {
+            document.querySelector(".anime-menu").classList.add("active")
+        })
+        document.querySelector(".anime-menu").addEventListener("mouseleave", e => {
+            document.querySelector(".anime-menu").classList.remove("active")
+        })
+    </script>
+</body>
+</html>
